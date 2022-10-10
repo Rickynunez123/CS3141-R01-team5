@@ -1,0 +1,63 @@
+@startuml
+
+ abstract User{
+
+-String username
+-String password
+
+ login()
+
+}
+
+class Landloard{
+
+-String name
+
+manageTenants()
+manageBuildings()
+closeMaintenanceRequest()
+viewMaintenanceRequest()
+}
+
+class Tenant{
+
+-String name
+-Integer apartmentNumber
+
+viewBills()
+makePayment()
+submitMaintenanceRequest()
+viewMaintenanceRequest()
+
+}
+
+class Building{
+
+
+}
+
+class Rent {
+
+
+
+}
+
+class Apartment{
+-String Address
+
+}
+
+class House{
+-StringAddress
+
+
+}
+
+User <|-- Landloard
+User <|-- Tenant 
+Building <|-- House
+Building <|-- Apartment
+Landloard o-- Rent
+Building o-- Rent
+Tenant o-- Rent
+@enduml
