@@ -1,0 +1,42 @@
+@startuml
+left to right direction
+actor Tenant as t
+actor Landlord as l
+package Smartments {
+usecase "Login" as UC1
+usecase "Authenticate" as UC1a
+usecase "Pay bill" as UCt1
+usecase "Contact landlord" as UCt2
+usecase "View Past/Upcoming bills" as UCt3
+usecase "Create maintenance request" as UCt4
+usecase "Manage Buildings" as UCl1
+usecase "Add new building" as UCl1a
+usecase "Manage properties" as UCl2
+usecase "Add new property" as UCl2a
+usecase "Set rent prices" as UCl3
+usecase "View maintenance requests" as UC2
+usecase "Close maintenance request" as UCl4
+usecase "Manage property assignments" as UCl5
+usecase "View availabilities" as UCl6
+usecase "View rent statuses" as UCl7
+
+t --> UC1
+UC1 <|-- UC1a
+l --> UC1
+t --> UCt1
+t --> UCt2
+t --> UCt3
+t --> UCt4
+l --> UCl1
+UCl1 <|-- UCl1a
+l --> UCl2
+UCl2 <|-- UCl2a
+l --> UCl3
+t --> UC2
+l --> UC2
+l --> UCl4
+l --> UCl5
+l --> UCl6
+l --> UCl7
+}
+@enduml
