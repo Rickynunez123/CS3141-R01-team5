@@ -33,22 +33,27 @@ viewMaintenanceRequest()
 
 class Building{
 
+-String Address
 
 }
 
-class Rent {
+class Rental {
 
+-Landloard owner
+-Tenant renter
+-Building property
+-Float price
 
 
 }
 
 class Apartment{
--String Address
+
 
 }
 
 class House{
--StringAddress
+
 
 
 }
@@ -57,7 +62,7 @@ User <|-- Landloard
 User <|-- Tenant 
 Building <|-- House
 Building <|-- Apartment
-Landloard o-- Rent
-Building o-- Rent
-Tenant o-- Rent
+Landloard o-- Rental
+Building o-- Rental
+Tenant o-- Rental
 @enduml
