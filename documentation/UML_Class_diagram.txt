@@ -1,11 +1,12 @@
 @startuml
 
- abstract User{
+abstract User{
 
 -String username
 -String password
 
- login()
+login()
+viewMaintenanceRequest()
 
 }
 
@@ -16,7 +17,8 @@ class Landloard{
 manageTenants()
 manageBuildings()
 closeMaintenanceRequest()
-viewMaintenanceRequest()
+managePayments()
+
 }
 
 class Tenant{
@@ -27,13 +29,14 @@ class Tenant{
 viewBills()
 makePayment()
 submitMaintenanceRequest()
-viewMaintenanceRequest()
+
 
 }
 
 class Building{
 
 -String Address
+-String Type
 
 }
 
@@ -42,26 +45,14 @@ class Rental {
 -Landloard owner
 -Tenant renter
 -Building property
--Float price
-
-
-}
-
-class Apartment{
-
-
-}
-
-class House{
-
-
+-Float price 
+-List billHistory
 
 }
 
 User <|-- Landloard
 User <|-- Tenant 
-Building <|-- House
-Building <|-- Apartment
+
 Landloard o-- Rental
 Building o-- Rental
 Tenant o-- Rental
