@@ -23,20 +23,23 @@
       <div class="container" style="max-width: 640px;">
         <div class="blob">
           <h2 style="text-align: center;">Welcome to Smartments!</h2>
-          <h5 style="text-align: center;">Login to continue or <a href="createAccount.html" style="text-align: center;">create account</a></h5>
+          <h5 style="text-align: center;">Login to continue or <a href="createAccount.php" style="text-align: center;">create account</a></h5>
           <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
             <label for="username">To:</label>
             <input type="text" id="to" name="to" placeholder="To:" required>
 
-            <label for="subject">Subject</label>
+            <label for="subject">Subject:</label>
             <input type="text" id="subject" name="subject" placeholder="Subject:" required>
 
-            <label for="message">Message</label>
+            <label for="message">Message:</label>
             <input type="text" id="message" name="message" placeholder="Message:" required>
+
+            <label for="from">From:</label>
+            <input type="text" id="from" name="from" placeholder="From:" required>
 
             <input type="submit" class="btn-login" value="Login">
           </form><br>
-          <div style="margin-top: 24px;"><a href="forgotPassword.html" style="margin-top: 16px">Forgot password?</a></div>
+          <div style="margin-top: 24px;"><a href="forgotPassword.php" style="margin-top: 16px">Forgot password?</a></div>
         </div>
       </div>
     </div>
@@ -48,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $to = $_POST['to'];
     $subject = $_POST['subject'];
     $message = $_POST['message'];
-    $from = "test@test.test";
+    $from = $_POST['from'];
     $headers = "From:" . $from;
     
     if(mail($to,$subject,$message,$headers))

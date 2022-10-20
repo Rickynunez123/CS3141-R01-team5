@@ -24,7 +24,7 @@
           <div class="container" style="max-width: 640px;">
               <div class="blob">
                   <h2 style="text-align: center;">Welcome to Smartments!</h2>
-                  <h5 style="text-align: center;">Login to continue or <a href="createAccount.html" style="text-align: center;">create account</a></h5>
+                  <h5 style="text-align: center;">Login to continue or <a href="createAccount.php" style="text-align: center;">create account</a></h5>
                   <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
                       <label for="username">Username</label>
                       <input type="text" id="username" name="username" placeholder="Username" required>
@@ -34,17 +34,18 @@
 
                       <input type="submit" class="btn-login" value="Login">
                   </form><br>
-                  <div style="margin-top: 24px;"><a href="forgotPassword.html" style="margin-top: 16px">Forgot password?</a></div>
+                  <div style="margin-top: 24px;"><a href="forgotPassword.php" style="margin-top: 16px">Forgot password?</a></div>
               </div>
           </div>
       </div>
-
+      <?php
       if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // collect value of input field
         $username = $_POST['username'];
-        password = $_POST['password'];
+        $password = $_POST['password'];
 
         // TODO: verify login credentials with db and redirect to user account
       }
+      ?>
   </body>
 </html>
