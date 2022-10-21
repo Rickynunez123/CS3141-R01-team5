@@ -45,6 +45,9 @@
         $password = $_POST['password'];
 
         // TODO: verify login credentials with db and redirect to user account
+
+        //TEMPORARY
+        header("Location: tenant.html");
       }
       ?>
   </body>
