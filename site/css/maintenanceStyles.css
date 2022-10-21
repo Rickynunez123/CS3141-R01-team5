@@ -17,6 +17,7 @@
     text-decoration: none;
     color: var(--color-text-header);
 }
+@import url('tenantstyles.css');
 
 .sidebar a.active{
     background-color: var(--color-secondary);   

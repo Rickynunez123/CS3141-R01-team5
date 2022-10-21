@@ -42,14 +42,17 @@
           // TODO: verify email is linked to a valid account
 
           // TODO: if user account exists, generate link with otp to reset their password
-          $resetLink = "https:\\this_is_not_a_real_url.what?";
+          $resetLink = "https://smartments.rentals";
 
 
           //send recovery email
           $subject = "Account Recovery";
+          //$message = '<p>A password reset has been requested, please click here to change password </p> <a href="' . $resetLink . '">' . $resetLink . '</a>';
           $message = "A password reset has been requested, please click here to change password " . $resetLink;
-          $from = "no-reply@smaertments.rentals";
-          $headers = "From:" . $from;
+          $from = "no-reply@smartments.rentals";
+          //$headers = 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+          //$headers .= "To: " . $to . "\r\n";
+          $headers = "From:" . $from;// . "\r\n";
 
           if(mail($to,$subject,$message,$headers))
           {
