@@ -47,7 +47,7 @@
         // TODO: verify login credentials with db and redirect to user account
 
         //TEMPORARY
-        header("Location: tenant.html");
+        header("Location: tenant.php");
       }
       ?>
   </body>

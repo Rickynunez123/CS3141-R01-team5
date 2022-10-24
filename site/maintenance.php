@@ -23,9 +23,9 @@
   <body>
 
     <div class = "sidebar">
-        <a class = "home" href="tenant.html"> Home </a>
+        <a class = "home" href="tenant.php"> Home </a>
         <a class = "payments" href =""> Payments History</a>
-        <a class = "maintenance" href="maintenance.html"> Maintenance </a>
+        <a class = "maintenance" href="maintenance.php"> Maintenance </a>
         <a class = "property" href = ""> Property Details</a>
         <a class = "Account Profile" href="" > Account Profile </a>
         <!-- TEMPORARY BUTTON, must be replaced with proper log out! -->
@@ -36,7 +36,7 @@
           <div class="container" style="max-width: 800px;">
               <div class="blob">
                   <h2 style="text-align: left;">Maintenance Request</h2>
-                  <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+                  <form method="post">
                       
                       <div>
                       <label for="fname">Full name:</label>
@@ -65,8 +65,13 @@
               </div>
           </div>
       </div>
-
-      
-
+      <?php
+      if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // collect value of input field
+        $name = $_POST['fname'];
+        $problem = $_POST['problem'];
+        $priority = $_POST['priority'];
+      }
+      ?>
   </body>
 </html>

@@ -57,6 +57,9 @@
                         <label for="repass">Re-Enter Password</label>
                         <input type="password" id="repass" name="repass" placeholder="Re-enter password" required>
 
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+
                         <label for="phone">Phone Number</label>
                         <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
                         <p style="margin-bottom: -8px;">Required format: <span style="color: var(--color-primary);">xxx-xxx-xxxx</span></p>
@@ -74,6 +77,7 @@
                 $lastName = $_POST['lastName'];
                 $username = $_POST['username'];
                 $password = $_POST['password'];
+                $email = $_POST['email'];
                 $phone = $_POST['phone'];
 
                 // TODO: create and initialize user account

@@ -47,12 +47,11 @@
 
           //send recovery email
           $subject = "Account Recovery";
-          //$message = '<p>A password reset has been requested, please click here to change password </p> <a href="' . $resetLink . '">' . $resetLink . '</a>';
-          $message = "A password reset has been requested, please click here to change password " . $resetLink;
+          $message = '<p>A password reset has been requested, please click here to change password </p> <a href="' . $resetLink . '">' . $resetLink . '</a>';
+          //$message = "A password reset has been requested, please click here to change password " . $resetLink;
           $from = "no-reply@smartments.rentals";
-          //$headers = 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-          //$headers .= "To: " . $to . "\r\n";
-          $headers = "From:" . $from;// . "\r\n";
+          $headers = 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+          $headers .= "From:" . $from;
 
           if(mail($to,$subject,$message,$headers))
           {
