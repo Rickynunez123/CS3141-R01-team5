@@ -45,11 +45,7 @@
                       </div>
 
                       <label for="problem">What seems to be the problem?</label>
-
-                      <textarea id="problem" name="problem" rows="15" cols="67">
-                      </textarea>
-
-
+                      <textarea id="problem"name="problem"rows="15"cols="67"></textarea>
                       <div class="priority">
                       <label for="priority">Request Priority</label><br>
                       <input type="radio" id="high" name="priority" value="high">
