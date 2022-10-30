@@ -15,6 +15,7 @@ const buildings = require('./routes/building');
 const apartments = require('./routes/apartments');
 const landlord = require('./routes/landlord');
 const rental = require('./routes/rental');
+const users = require('./routes/users')
 
 //changes
 
@@ -25,6 +26,7 @@ app.use('/api/smartments/building', buildings);
 app.use('/api/smartments/apartments', apartments);
 app.use('/api/smartments/landlord', landlord);
 app.use('/api/smartments/rental', rental);
+app.use('/api/smartments/users', users)
 
 
 
