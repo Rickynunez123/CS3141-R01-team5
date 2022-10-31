@@ -12,9 +12,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <!-- Use styles -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/normalize.css" />
-  <link rel="stylesheet" href="../css/styles.css" />
-  <link rel="stylesheet" href="../css/maintenanceStyles.css" />
+  <link rel="stylesheet" href="/dashboard/stylesheets/css/normalize.css" />
+  <link rel="stylesheet" href="/dashboard/stylesheets/css/styles.css" />
+  <link rel="stylesheet" href="/dashboard/stylesheets/css/maintenanceStyles.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!--javascript animation-->
 
