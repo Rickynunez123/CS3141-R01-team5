@@ -16,6 +16,7 @@ body{
 }
 
 
+
 /*Sidebar*/
 
 .sidebar{
@@ -23,7 +24,6 @@ body{
     height: 700px;
     width: 175px;
     margin:20px;
-    margin-right: 50px;
     background-color: var(--color-bg-secondary);
     border-radius: var(--border-radius);
     float: left;
@@ -46,4 +46,77 @@ body{
     background-color: var(--color-secondary)
   }
 
- 
+  
+  
+.blob-one {
+
+    background-color: var(--color-bg-tertiary);
+    display: inline-block;
+    height: 450px; 
+    width: 420px; 
+    margin: 20px;
+    border-radius: var(--border-radius);
+    margin-top: 150px; 
+
+}   
+.blob-two {
+
+    background-color: var(--color-bg-tertiary);
+    display: inline-block;
+    height: 450px; 
+    width: 420px; 
+    margin: 20px;
+    border-radius: var(--border-radius);
+    padding-top: 20px;
+    margin-top: 0px; 
+   
+}   
+
+h1, h2 {
+    text-align: center;
+    color: var(--color-text-header);
+
+}
+
+.overdueBlock, .MaintReq{
+    background-color: #ff3400;
+    margin: 20px;  
+    max-width: 400px;
+    height: 250px; 
+    border-radius: var(--border-radius);
+}
+
+li {
+    font-size: larger;
+    text-align: left;
+    padding: 10px;
+}
+
+.viewTenants, .viewReq{
+        display:block;
+        background: linear-gradient(90deg, var(--color-primary) 0%,var(--color-secondary) 100%);
+        border: none;
+        color: var(--color-text-btn);
+        padding: 16px 32px;
+        text-align: center;
+        border-radius: 32px;
+        transition: 0.2s;
+        margin-top: 12px;
+        width: 200px;
+        float: left;
+        margin-left: 100px;
+        font-weight: bold;
+        text-decoration: none;
+        
+    }
+    
+    .viewTenants:hover, .viewReq:hover{
+        padding: 16px 34px;
+        font-size: 1.05rem;
+        margin-top: 12px;
+        border-radius: 22px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    
