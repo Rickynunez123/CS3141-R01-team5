@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Smartments </title>
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Use styles -->
+    <link rel="stylesheet" href="css/styles2.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--javascript animation-->
+  </head>
+
+  <!-- header -->
+   <header>
+    <nav class="nav collapsible">
+      <!--Give the extra class to make a colapsible component-->
+      <a class="nav__brand" href="/"
+        ><img
+          class="mtu__image"
+          src="images/HuskyIcon_TwoColor_adobe_express.svg" 
+          alt=""
+      /></a>
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="login.php">Login</a></li>
+      </ul>
+    </nav>
+   </header>
+
+
+
+
+<!--------------------------------------------------------->
+
+<section class="block container">
+    <header class="block__header">
+      <h1>What is Smartments?</h1> <!-- change style -->
+      <!-- <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, laborum.
+      </p> -->
+    </header>
+
+    <article class="grid grid--1x2 feature">
+      <div class="feature__content">
+        <h3 class="feature__heading">What do we do?</h3>
+        <p>
+            We provide an online portal to make renting more efficient, benefiting both landlords and tenants. 
+            We provide a web app in which the tenant will be charged every month using a payment method of their choosing. 
+            With that, we will make sure the landlord gets the money on time, and can easily track which tenants have paid
+        </p>
+        <a href="#" class="link-arrow">Learn More</a>
+      </div>
+      <picture>
+        <img class="feature__image" src="images/WelcomeOwners.jpg" alt="" />
+      </picture>
+    </article>
+</section>
+
+
+  <section class="block container ">
+    <article class="grid grid--1x2 feature ">
+        <picture>
+          <img class="feature__image " src="images/safePay.png" alt="" />
+        </picture>
+      <div>
+
+        <h3 class="feature__heading ">How do we do it?</h3>
+        <p>
+            We will send an email notification to the tenant one day before the payment is made. 
+            In case their payment does not go through we will notify them every day. 
+            If they do not pay the landlord will have the option to send an eviction notice.
+            The result is that the tenant will be more responsible and they will prioritise having the money to pay the 
+            monthly rent and we will minimise the interaction between the landlord and the tenant.
+        </p>
+      </div>
+    </article>
+  </section>
+  
+  
+<!--------------------------------------------------------->
+
+<section class="block container ">
+
+<div class="callout callout--secondary">
+  <div class="grid grid--1x2">
+    <div class="callout__content">
+      <h2 class="callout__heading">Are you ready for your next experience?</h2>
+    </div>
+    <a href="createAccount.php" class="btn btn--outline btn--streched">Get Started</a>
+  </div>
+</div>
+
+<div class="grid grid--1x3">
+    <picture><img class="feature__image" src="images/stay1.png" alt="" /></picture>
+    <picture><img class="feature__image" src="images/stay2.png" alt="" /></picture>
+    <picture><img class="feature__image" src="images/stay3.png" alt="" /></picture>
+
+</div>
+</section>
+
+
+
+
+<!--------------------------------------------------------->
+
+
+<footer class="block block--dark footer">
+  <div class="container grid footer__sections">
+    
+    <section class="collapsible footer__section">
+      <header class="collapsible__header">
+        <h2 class="collapsible__heading footer__heading">Contact us</h2>
+          <svg class="icon icon--white collapsible__chevron">
+            <use xlink:href="images/sprite.svg#chevron"></use>
+          </svg>
+        </span>
+      </header>
+      <div class="collapsible__content">
+        <li><a href="#">Facebook: smartments@hotmail.com </a></li>
+        <li><a href="#">Instagram: @smartments </a></li>
+        <li><a href="#">Twitter: @smartments</a></li>      </div>
+    </section>
+    <section class="footer__brand">
+      <img class="image__footer" src="images/HuskyIcon_TwoColor_adobe_express.svg" alt=""> <!-- Change to smartments logo -->
+      <p class="footer__brand">Copyright 2022 MTU</p>
+    </section>        
+  </div>
+</footer>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

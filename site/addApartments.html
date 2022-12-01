@@ -1,0 +1,91 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Building Manager</title>
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Use styles -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!--javascript animation-->
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/landlordStyles.css" />
+  <link rel="stylesheet" href="css/styles2.css" />
+</head>
+
+<!---------------------------------------------->
+
+<!--    Side bar    -->
+<div class="sidebar">
+  <a class="home" href="landloard.php"> Home </a>
+  <a class="tenants" href="tenantManager.php"> Tenant Manager </a>
+  <a class="buildings" href="buildingManager.php"> Building Manager </a>
+  <a class="maintenance" href="maintanenceManager.php"> Maintenance </a>
+  <a class="Account Profile" href=""> Account Profile </a>
+  <!-- TEMPORARY BUTTON, must be replaced with proper log out! -->
+  <a class="logout" href="index.php"> Logout </a>
+</div>
+
+<!---------------------------------------------->
+
+<section class="block container block-domain">
+  <header class="block__header">
+    <h2>Add apartments</h2>
+  </header>
+  <p>How many apartments do you want to list?</p>
+  <article class="grid grid--1x3">
+
+</div><input type="text" class="input" placeholder="Enter a number or range" /></div>
+</div><input type="text" class="inputpre" placeholder="A-Z" /></div>
+
+  </article>
+  <p>Enter the capacity</p>
+  <div>
+    <input type="text" class="input" />
+  </div>
+  <p>Enter price</p>
+  <div>
+    <input type="text" class="input" placeholder="$$$" />
+  </div>
+  <p>Enter number of bathrooms</p>
+  <div>
+    <input type="text" class="input" />
+  </div>
+  <p>Enter number of bedrooms</p>
+  <div>
+    <input type="text" class="input" />
+  </div>
+
+  <!---->
+  <article class="grid grid--1x3">
+    <div>
+        <p>Furnished</p>
+            <input type="radio" name="q" > Yes<br>
+            <input type="radio" name="q" > No</div>
+    <div><p>Pet Friendly</p>
+            <input type="radio" name="q1" > Yes<br>
+            <input type="radio" name="q1" > No
+    </div>
+        <div>
+            <p>Smoking</p>
+            <input type="radio" name="q2" > Yes<br>
+            <input type="radio" name="q2" > No
+        </div>
+    </article>
+
+  <button class="btn btn--primary btn--block">Done</button>
+</section>
+
+<!---------------------------------------------->
